@@ -4,9 +4,10 @@
 每节课的时间大概在60min，主要是简介性、方向性的指导，让cs专业本科入学的同学知道自己可以做什么、可以使用什么工具。
 只要知道世界上存在这样的工具，需要的时候自己再查就好了。
 
+0. 从开机到关机                    ———— windows快捷键、PATH、cmd、分屏投屏、清理c盘、调节屏幕亮度、关于usb的科普（各种病毒、hack、如何偷老师u盘内容）、网络连接的科普（为什么连不上校园网）
 1. 科学上网学                      ————大陆相关法律法规、洋葱网络、vps、telegram、协议、网络劣化
 2. 网络资源自学引论                ————bilibili、传统mooc、课程网站、大佬博客（知乎、Twitter、私人博客）
 3. hack it！                       ————油猴、便宜百度云、便宜CSDN、github的使用、
 4. 字典与计算器                    ————Chrome 拓展（Vivaldi）、Wolfram（mathematica）、Wikipeida、
-5. 竞赛                            ————算法竞赛（icpc、ccpc）、夺旗赛（）、hackathon
+5. 竞赛                            ————算法竞赛（icpc、ccpc、蓝桥杯）、夺旗赛（?CTF）、hackathon
 6. 自己做玩具                      ————js全栈、java全栈
