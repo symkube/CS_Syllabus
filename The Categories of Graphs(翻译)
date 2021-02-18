@@ -1,0 +1,84 @@
+University of Montana
+ScholarWorks at University of Montana
+
+封面:
+
+2011
+The Categories of Graphs
+Demitri Joel Plessas
+The University of Montana
+
+Recommended Citation
+Plessas, Demitri Joel, "The Categories of Graphs" (2011). Graduate Student Theses, Dissertations, & Professional Papers. 967.
+https://scholarworks.umt.edu/etd/967
+
+This Dissertation is brought to you for free and open access by the Graduate School at ScholarWorks at University of Montana. It has been accepted for
+inclusion in Graduate Student Theses, Dissertations, & Professional Papers by an authorized administrator of ScholarWorks at University of Montana.
+For more information, please contact scholarworks@mso.umt.edu.
+
+THE CATEGORIES OF GRAPHS
+By
+Demitri Joel Plessas
+B.S. Montana Tech of the University of Montana, USA, 2006
+M.A. The University of Montana, USA, 2008
+Dissertation
+presented in partial fulfillment of the requirements
+for the degree of
+Doctor of Philosophy
+in Mathematics
+The University of Montana
+Missoula, MT
+
+May 2011
+
+Approved by:
+Perry Brown, Associate Provost for Graduate Education
+Graduate School
+Dr. George McRae, Chair
+Mathematical Sciences
+Dr. Peter Golubtsov
+Mathematical Sciences
+Dr. Kelly McKinnie
+Mathematical Sciences
+Dr. Nikolaus Vonessen
+Mathematical Sciences
+Dr. Joel Henry
+Computer Science
+
+====
+
+Committee Chair: George McRae, Ph.D.
+
+In traditional studies of graph theory, the graphs allow only one edge to be incident to any two vertices, not necessarily distinct, and the graph morphisms must map edges to edges and vertices to vertices while preserving incidence. We refer to these restricted morphisms as strict morphisms. We relax the conditions on the graphs by allowing any number of edges to be incident to any two vertices, as well as relaxing the condition on graph morphisms by allowing edges to be mapped to vertices, provided that incidence is still preserved. We call the broader category of these graphs and these morphisms the Category of Conceptual Graphs and Graph Morphisms, denoted Grphs. 
+
+We then define four other concrete categories of graphs created by combinations of restrictions of the graph morphisms as well as restrictions on the allowed graphs.We determine the categorial structure of these six categories of graphs by characterizing common categorially defined structures and properties and by characterizing six special types of monomorphisms, and dually six special types of epimorphisms. We also establish the Fundamental Morphism Theorem in two of the categories of graphs. We then provide an Elementary Theory for five categories of graphs, producing a list of firstorder axioms that, when taken with the higher-order axiom of the existence of small products and coproducts, characterizes these five categories of graphs. We also provide a result toward Hedetniemi’s conjecture that arose from the study of the categories of graphs.
+
+
+在传统的图论教学中, 图只允许一条边连接在两个节点之间(可以相同). 而在范畴意义下, 图的态射必须是边到边/点到点的映射, 并保持着连接关系. 
+
+[致谢]
+
+[记号表]
+
+
+Chapter 1
+Introduction - Concrete Categories of Graphs and Their Elementary Theories
+
+第一章
+介绍 - 图的具体范畴及其基本理论
+
+Often the study of morphisms of any mathematical object starts with the study of automorphisms. In graph theory, this study produced representation theorems for groups as automorphism groups of graphs. The study of automorphisms also produced characterizations of
+graphs (e.g. vertex-transitive graphs and distance-transitive graphs). More recently, finding
+restrictions of the automorphism set for the graph by considering automorphisms that fix
+vertex colors or by considering automorphisms that fix certain sets of vertices produced useful
+new graph parameters (the distinguishing number [2] and fixing number [10] for a graph).
+The study of morphisms then delves into the study of endomorphisms and finally homomorphisms. In graph theory, a certain class of graph homomorphisms generalizes vertex-coloring,
+and is now being widely studied. In 2004, a textbook was published about these graph homomorphisms [14].
+
+所有数学对象对态射(morphisms)的引入往往都离不开自同构(automorphisms). 在图论中, 这一理论带来了群表示论, 能够表示图的自同构群. 自同构理论还带来了图的表征(characterizations), 比如顶点传递图( vertex-transitive graphs)与距离传递图(distance-transitive graphs). 最近, 通过考虑满足节点颜色的自同构, 或是通过考虑用给定的点集作为参数生成有价值的新图(比如图的可区别数(distinguishing number)[2]/固定数(fixing number)[10])的自同构, 来找到图的自同构集合的约束.
+
+
+
+
+
+
