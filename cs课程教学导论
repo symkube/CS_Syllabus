@@ -4,4 +4,21 @@ input-output 思想
 
 把内容大致划分一下
 
-每部分尝试给出motivation, 以及正反例
+每部分尝试给出motivation, 以及这一技术的正反例
+
+每堂课的末尾稍作总结今天的内容(可以仅以slide给出)
+
+“Abstraction is selective ignorance” - Andrew Koenig
+
+Modes of abstraction:
+
+– Via languages/compilers:
+• Higher-level code, few machine dependencies
+– Via functions and subroutines
+• Abstract interface to behavior
+– Via modules
+• Export interfaces; hide implementation
+– Via classes or abstract data types
+• Bundle data with its operations
+
+--by https://web.stanford.edu/class/cs143/lectures/lecture02.pdf
