@@ -67,15 +67,77 @@ Introduction - Concrete Categories of Graphs and Their Elementary Theories
 第一章
 介绍 - 图的具体范畴及其基本理论
 
-Often the study of morphisms of any mathematical object starts with the study of automorphisms. In graph theory, this study produced representation theorems for groups as automorphism groups of graphs. The study of automorphisms also produced characterizations of
+Often the study of morphisms of any mathematical object starts with the study of automorphisms. In graph theory, this study produced representation theorems for groups as automorphism groups of graphs. The study of automorphisms also produced characterizations of
 graphs (e.g. vertex-transitive graphs and distance-transitive graphs). More recently, finding
 restrictions of the automorphism set for the graph by considering automorphisms that fix
 vertex colors or by considering automorphisms that fix certain sets of vertices produced useful
 new graph parameters (the distinguishing number [2] and fixing number [10] for a graph).
-The study of morphisms then delves into the study of endomorphisms and finally homomorphisms. In graph theory, a certain class of graph homomorphisms generalizes vertex-coloring,
-and is now being widely studied. In 2004, a textbook was published about these graph homomorphisms [14].
+The study of morphisms then delves into the study of endomorphisms and finally homomorphisms. In graph theory, a certain class of graph homomorphisms generalizes vertex-coloring,
+and is now being widely studied. In 2004, a textbook was published about these graph homomorphisms [14]
 
-所有数学对象对态射(morphisms)的引入往往都离不开自同构(automorphisms). 在图论中, 这一理论带来了群表示论, 能够表示图的自同构群. 自同构理论还带来了图的表征(characterizations), 比如顶点传递图( vertex-transitive graphs)与距离传递图(distance-transitive graphs). 最近, 通过考虑满足节点颜色的自同构, 或是通过考虑用给定的点集作为参数生成有价值的新图(比如图的可区别数(distinguishing number)[2]/固定数(fixing number)[10])的自同构, 来找到图的自同构集合的约束.
+所有数学对象对态射(morphisms)的引入往往都离不开对于自同构(automorphisms)的研究. 在图论中, 这一理论带来了群表示论, 能够表示图的自同构群. 自同构理论还带来了图的表征(characterizations), 比如顶点传递图( vertex-transitive graphs)与距离传递图(distance-transitive graphs). 有最近的研究, 通过考虑满足节点颜色的自同构, 或是通过考虑用给定的点集作为参数生成有价值的新的图(比如图的可区别数(distinguishing number)[2]/固定数(fixing number)[10])的自同构, 来找到图的自同构集合的约束. 对态射的研究还进入了自同态(endomorphisms)的研究领域并最终被到达同态(homomorphisms)的研究领域中. 在图论中, 图同态的一个确定的类别推广到了点染色问题上, 现在正在得到广泛的研究. 2004年, 有一本关于这种图同态的textbook出版[14].
+
+The most common category considered in (undirected) graph theory is a category where
+graphs are defined as having at most one edge incident to any two vertices and at most one
+loop incident to any vertex. We will refer to these graphs as simple graphs. The morphisms
+are usually described as a pair of functions between the vertex sets and edge sets that respect
+edge incidence. We refer to these restricted morphisms as strict morphisms. We call this
+category the Category of Simple Graphs with Strict Morphisms, denoted SiStGrphs
+
+(无向图的)图论中最常被考虑到的范畴是如下的范畴. 这一范畴对图的定义是, 任意两点间最多连一条边, 任意一个点最多有一个自环. 我们称这样的图为简单图(simple graphs). 这个范畴对应的态射则是边集到点集的一对映射, 表示了图中边的连接. 这样的受限的态射称为严格态射(strict morphisms). 对于简单图上带着严格态射的范畴, 我们记作SiStGrphs(Simple-Strict-Graphs).
+
+We will relax the conditions on the graphs by allowing any number of edges to be incident
+to any two vertices (referred to as conceptual graphs), as well as relaxing the condition on
+graph morphisms by allowing edges to be mapped to vertices, provided that incidence is still
+preserved. We call the broader category of these graphs and these morphisms the Category
+of Conceptual Graphs with Graph Morphisms, denoted Grphs.
+
+我们可以把要求放宽一些, 允许两点间连接任意数量的边(称为概念图*(conceptual graphs)). 同时也就放宽了图态射的要求, 只要连接关系能够保持, 点就可以映射到边. 对于上述的概念图*与态射构成的这样涵盖更广的范畴, 记作Grphs.
+
+*:这个说法并不常见
+译注:注意态射需要能够复合
+
+We also consider the restriction on a graph where no edge is allowed to be incident to a
+single vertex, called loopless. Using the restrictions of strict, simple, and loopless, we define
+four more categories of graphs (for details see Section 2.2)
+
+我们也可以限制对图的定义, 不允许一条边连接同一个点, 也就是说没有自环(loopless). 使用严格态射, 简单图, 没有自环, 这三个限制的使用与否, 总共产生了下表所示的四个新的图范畴. (细节见2.2节)
+
+Category Full Category Name
+Grphs         The Category of Conceptual Graphs with Graph Morphisms
+              概念图+图态射 的范畴
+SiGrphs        The Category of Simple Graphs with Graph Morphisms
+              简单图+图态射 的范畴
+SiLlGrphs        The Category of Simple Loopless Graphs with Graph Morphisms
+              无自环简单图+图态射 的范畴
+StGrphs         The Category of Conceptual Graphs with Strict Morphisms
+              概念图+严格态射 的范畴
+SiStGrphs         The Category of Simple Graphs with Strict Morphisms
+              简单图+严格态射 的范畴
+SiLlStGrphs        The Category of Simple Loopless Graphs with Strict Morphisms
+              无自环简单图+严格态射 的范畴
+              
+注: 对于数学系的而言, "集合的集合"是一个很大的问题, 但是对于CS人, 似乎天然就很习惯分层的做法...
+
+We provide an inclusion diagram of these six categories of graphs, with a seventh category of
+graphs, Sets (The Category of Sets and Functions), considered as a graph category consisting
+of “empty edge graphs” (Figure 1.1). We note that these categories are concrete: the objects
+are sets with structure and the morphisms are structure preserving functions (see Definition
+2.2.1).
+
+我们给出了一个描述这六种范畴的包含关系的图标(Figure 1.1), 另外还加上了第七个图范畴, "Sets"(集合于映射的范畴), 描述了没有边的图. ......
+
+Figure 1.1: An inclusion diagram of the Categories of Graphs
+
+In Section 2.3, we investigate these six concrete categories of graphs and determine the categorial structure by finding the concrete existence of abstractly defined categorial structures and properties or finding counterexamples to their existence (throughout we use the term categorial instead of categorical as categorical is used in model theory to denote a theory with a unique model up to isomorphism, see [11]).
+
+在2.3节, 
+
+
+
+
+
+
 
 
 
