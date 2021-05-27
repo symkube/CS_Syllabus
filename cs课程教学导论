@@ -1,6 +1,6 @@
 input-output 思想
 
-这门课程所用的特殊"语言", 是为了解决什么基本问题
+这门课程所用的特殊"语言"（notation）, 是为了解决什么基本问题
 
 把内容大致划分一下
 
@@ -22,3 +22,5 @@ Modes of abstraction:
 • Bundle data with its operations
 
 --by https://web.stanford.edu/class/cs143/lectures/lecture02.pdf
+
+“听不懂就往下听”是一种很珍贵的信任，老师需要努力维系
